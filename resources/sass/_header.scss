@@ -1,0 +1,44 @@
+header
+{
+    .header-info
+    {
+        height: 25px;
+        background-color: $main-color;
+        color: $main-color-contrast;
+        font-size: 0.8rem;
+    }
+    .menu
+    {
+        height: 130px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .active
+    {
+        border-bottom: 5px solid $main-color;
+        color: $main-color;
+    }
+    ul {
+
+        display: flex;
+        list-style-type: none;
+        text-transform: uppercase;
+
+        li
+        {
+            padding: 0 10px;
+            font-size: 1.2rem;
+            font-family:$segoe-bold;
+
+            a{
+                color: #687378;
+                text-decoration: none;
+                font-weight: bold;
+                padding-bottom: 100%;
+            }
+        }
+        
+    }        
+}
