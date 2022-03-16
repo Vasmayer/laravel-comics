@@ -1,0 +1,26 @@
+.comic-show
+{
+    .line{
+        height: 60px;
+        background-color: $main-color;
+    }
+    .jumbotron
+    {
+        height: 500px;
+        background-image:url('../images/jumbotron.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        img{
+            width: 150px;
+            height: auto;
+            position: absolute;
+            top:60%;
+            left:20%;
+        
+        }
+        
+    }
+}

@@ -15,7 +15,7 @@
          <ul>
             @foreach (config('menu') as $link)
                <li>
-                  <a href="{{route('comics')}}" class="{{request()->routeIs($link['route']) ? 'active' : ''}}">{{$link['name']}}</a>
+                  <a href="{{route('comic.index')}}" class="{{request()->routeIs($link['route']) ? 'active' : ''}}">{{$link['name']}}</a>
                   @if($loop->last)
                   <span class="cevron"><i class="fas fa-caret-down"></i></span>
                   @endif

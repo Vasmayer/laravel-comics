@@ -11433,3 +11433,23 @@ main .actions .action .action-image img {
 main .actions .action .action-name {
   padding-left: 20px;
 }
+
+.comic-show .line {
+  height: 60px;
+  background-color: #0082F9;
+}
+.comic-show .jumbotron {
+  height: 500px;
+  background-image: url("../images/jumbotron.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.comic-show .jumbotron img {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+}

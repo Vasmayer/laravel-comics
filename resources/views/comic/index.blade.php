@@ -7,15 +7,13 @@
     <div class="current-series" >current series</div>
     <div class="comics container">
         @foreach ($comics as $comic)
-        <a href="{{ route('comics')}}">
-            <div class="serie">
+        <a href="{{ route('comic.show',['id'=>$loop->index])}}" class="serie">
                 <figure>
                     <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
                 </figure>
                 <div class="info">
                     {{$comic['series']}}
                 </div>
-            </div>
         </a>
         @endforeach
     </div>
