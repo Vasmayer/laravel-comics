@@ -11264,15 +11264,172 @@ header ul {
   display: flex;
   list-style-type: none;
   text-transform: uppercase;
+  align-items: center;
 }
 header ul li {
   padding: 0 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Segoe UI Bold", "Open Sans", Helvetica, sans-serif;
+}
+header ul li .search {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #0082F9;
+  text-align: right;
+  color: #687378;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
 }
 header ul li a {
   color: #687378;
   text-decoration: none;
   font-weight: bold;
-  padding-bottom: 100%;
+  padding-bottom: calc(100% - 5px);
+}
+header ul li .cevron {
+  color: #0082F9;
+}
+
+footer {
+  font-family: "Segoe UI Bold", "Open Sans", Helvetica, sans-serif;
+}
+
+h4, .h4 {
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.top-footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  max-height: 350px;
+}
+.top-footer .links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.top-footer .links .cols {
+  color: darkgray;
+  padding: 20px;
+}
+.top-footer .links .cols ul {
+  list-style-type: none;
+}
+.top-footer .links .cols ul li {
+  padding: 5px 0;
+  font-size: 10px;
+}
+.top-footer .logo {
+  transform: scale(0.7);
+}
+
+.bottom-footer {
+  height: 100px;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom-footer .sign-up button {
+  color: white;
+  background-color: #303030;
+  font-size: 1.3rem;
+  border: 2px solid #0082F9;
+  padding: 10px 15px;
+}
+.bottom-footer .follow-us {
+  color: #0082F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-footer .follow-us img, .bottom-footer .follow-us h3, .bottom-footer .follow-us .h3 {
+  margin: 0 10px;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+main .jumbo {
+  height: 500px;
+  background-image: url("../images/jumbotron.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .current-series {
+  background-color: #0082F9;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  top: -25px;
+  left: 250px;
+}
+main .comics {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .comics .serie {
+  flex-basis: calc(16.6666666667% - 20px);
+  padding: 10px;
+}
+main .comics .serie .info {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+}
+main .comics .serie figure {
+  margin: 0;
+  padding: 0;
+}
+main .comics .serie figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 175px;
+  width: 100%;
+}
+main .load-more {
+  text-align: center;
+}
+main .load-more button {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #0082F9;
+  padding: 10px 15px;
+  border: 0;
+}
+main .actions {
+  background-color: #0082F9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 30px;
+}
+main .actions .action {
+  display: flex;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  align-items: center;
+}
+main .actions .action .action-image img {
+  width: 50px;
+  height: 60px;
+}
+main .actions .action .action-name {
+  padding-left: 20px;
 }

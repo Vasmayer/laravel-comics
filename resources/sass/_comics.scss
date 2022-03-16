@@ -1,0 +1,91 @@
+main{
+    background-color: #1c1c1c;
+    .jumbo
+    {
+        height: 500px;
+        background-image:url('../images/jumbotron.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .current-series
+    {
+        background-color: $main-color;
+        color: $main-color-contrast;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        top:-25px;
+        left: 250px;
+    }
+    .comics
+    {  
+         display: flex;
+         flex-wrap: wrap;
+
+        .serie{ 
+             flex-basis: calc( 100% / 6 - 20px );
+             padding: 10px; 
+            .info
+            {
+                text-transform: uppercase;
+                color: $main-color-contrast;
+                font-size: 0.8rem;
+            }
+            figure
+            {
+                margin: 0;
+                padding: 0;
+                img
+                {
+                   object-fit:cover;
+                   object-position: top;
+                   height: 175px;
+                   width: 100%;
+                }
+               
+            }
+        }
+    }
+    .load-more
+    {
+        text-align: center;
+        button
+        {
+            text-transform: uppercase;
+            color: $main-color-contrast;
+            background-color: $main-color;
+            padding: 10px 15px;
+            border: 0;
+        }
+    }
+    .actions
+    {
+        background-color: $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        padding: 30px;
+
+        .action{
+            display: flex;
+            color: $main-color-contrast;
+            text-transform: uppercase;
+            align-items: center;
+            .action-image{
+                img{
+                    width: 50px;
+                    height: 60px;
+                }
+            }
+            .action-name
+            {
+                padding-left: 20px;
+            }
+        }
+    }
+
+
+}

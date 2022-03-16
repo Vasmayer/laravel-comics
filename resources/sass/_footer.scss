@@ -1,0 +1,83 @@
+
+footer
+{
+     font-family: $segoe-bold; 
+}
+ h4
+ {
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+ }
+.top-footer
+{
+    background-image: url(../images/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    max-height: 350px;
+
+    .links
+    {
+        display: flex;
+        justify-content:center;
+        width: 100%;
+
+        .cols
+        {
+             color: darkgray;
+             padding: 20px;
+
+             ul{
+                 list-style-type: none;
+
+                 li{
+                    padding: 5px 0;   
+                    font-size: 10px;        
+                 }
+             }
+        }
+        
+    }
+    .logo
+    {
+        transform: scale(0.7);
+    }
+}
+
+.bottom-footer
+{
+    height: 100px;
+    background-color: $color-bottom-footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .sign-up{
+
+        button{
+            color: white;
+            background-color: $color-bottom-footer;
+            font-size: 1.3rem; 
+            border: 2px solid $main-color;
+            padding: 10px 15px;
+        }
+    }
+
+    .follow-us
+    {
+        color: $main-color;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+       
+       img,h3{
+           margin: 0 10px;
+       }
+    }
+}
