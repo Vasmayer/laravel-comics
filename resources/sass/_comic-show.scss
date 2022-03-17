@@ -23,4 +23,34 @@
         }
         
     }
+    .info{
+
+        display: flex;
+        width: 70%;
+        margin: 50px auto;
+
+        .info-text
+        {
+            margin: 20px;
+            flex-grow: 1;
+            .price
+            {
+                background-color: $price-green;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 20px;
+                width: 100%;
+                .text-d-green
+                {
+                    color: darkgreen;
+                }
+                .disponibility
+                {
+                    display: flex;
+                }
+            }
+            
+        }
+    }
 }

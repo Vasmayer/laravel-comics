@@ -11453,3 +11453,26 @@ main .actions .action .action-name {
   top: 60%;
   left: 20%;
 }
+.comic-show .info {
+  display: flex;
+  width: 70%;
+  margin: 50px auto;
+}
+.comic-show .info .info-text {
+  margin: 20px;
+  flex-grow: 1;
+}
+.comic-show .info .info-text .price {
+  background-color: #55BA58;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  width: 100%;
+}
+.comic-show .info .info-text .price .text-d-green {
+  color: darkgreen;
+}
+.comic-show .info .info-text .price .disponibility {
+  display: flex;
+}
